@@ -1013,82 +1013,32 @@
                     
                 
                         <!-- Start::slide -->
-                        <!-- <li class="slide has-sub">
+                        <li class="slide has-sub">
                             <a href="javascript:void(0);" class="side-menu__item">
-                                <i class="fe fe-pie-chart side-menu__icon"></i>
-                                <span class="side-menu__label">Charts</span>
+                                <i class="fe fe-layers side-menu__icon"></i>
+                                <span class="side-menu__label">Employee Management</span>
                                 <i class="fe fe-chevron-right side-menu__angle"></i>
                             </a>
                             <ul class="slide-menu child1">
                                 <li class="slide side-menu__label1">
-                                    <a href="javascript:void(0)">Charts</a>
+                                    <a href="javascript:void(0)">Employee</a>
                                 </li>
-                                <li class="slide has-sub">
-                                    <a href="javascript:void(0);" class="side-menu__item">Apex Charts
-                                        <i class="fe fe-chevron-right side-menu__angle"></i></a>
-                                    <ul class="slide-menu child2">
-                                        <li class="slide">
-                                            <a href="apex-line-charts.php" class="side-menu__item">Line Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-area-charts.php" class="side-menu__item">Area Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-column-charts.php" class="side-menu__item">Column Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-bar-charts.php" class="side-menu__item">Bar Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-mixed-charts.php" class="side-menu__item">Mixed Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-rangearea-charts.php" class="side-menu__item">Range Area Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-timeline-charts.php" class="side-menu__item">Timeline Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-candlestick-charts.php" class="side-menu__item">CandleStick
-                                                Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-boxplot-charts.php" class="side-menu__item">Boxplot Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-bubble-charts.php" class="side-menu__item">Bubble Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-scatter-charts.php" class="side-menu__item">Scatter Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-heatmap-charts.php" class="side-menu__item">Heatmap Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-treemap-charts.php" class="side-menu__item">Treemap Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-pie-charts.php" class="side-menu__item">Pie Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-radialbar-charts.php" class="side-menu__item">Radialbar Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-radar-charts.php" class="side-menu__item">Radar Charts</a>
-                                        </li>
-                                        <li class="slide">
-                                            <a href="apex-polararea-charts.php" class="side-menu__item">Polararea Charts</a>
-                                        </li>
-                                    </ul>
+                                   
                                 </li>
                                 <li class="slide">
-                                    <a href="chartjs-charts.php" class="side-menu__item">Chartjs Charts</a>
+                                    <a href="personal_information.php" class="side-menu__item">Personal Information</a>
                                 </li>
                                 <li class="slide">
-                                    <a href="echarts.php" class="side-menu__item">Echart Charts</a>
+                                    <a href="job_information.php" class="side-menu__item">Job Information</a>
+                                </li>
+                                <li class="slide">
+                                    <a href="employment_history.php" class="side-menu__item">Employment History</a>
+                                </li>
+                                <li class="slide">
+                                    <a href="documentation.php" class="side-menu__item">Documentation</a>
                                 </li>
                             </ul>
-                        </li> -->
+                        </li> 
                         <!-- End::slide -->
 
                        
