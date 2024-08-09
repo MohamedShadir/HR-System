@@ -19,14 +19,19 @@
                         </div>
                     </div>
                     <div class="ms-auto pageheader-btn">
-                        <button type="button" class="btn btn-primary btn-wave waves-effect waves-light me-2"> <i class="fe fe-plus mx-1 align-middle"></i>Add</button>
-                        <button type="button" class="btn btn-success btn-wave waves-effect waves-light"> <i class="fe fe-log-in mx-1 align-middle"></i>Export</button>
+                        <button type="button" class="btn btn-primary btn-wave waves-effect waves-light me-2" onclick="addEmployee()"> <i class="fe fe-plus mx-1 align-middle"></i>Add</button>
+
+            
+                                
+                            
+                        <button type="button" class="btn btn-success btn-wave waves-effect waves-light"> <i class="fe fe-log-in mx-1 align-middle"></i>Logout</button>
                     </div>
                 </div>
                 <!-- Page Header Close -->
 
                 <!-- ROW-5 -->
                 <div class="row">
+                                        
                     <div class="col-xl-12">
                         <div class="card custom-card">
                             <div class="card-header justify-content-between">
@@ -85,11 +90,14 @@
                                     <table class="table text-nowrap table-hover border table-bordered">
                                         <thead class="border-top">
                                             <tr>
-                                                <th class="bg-transparent border-bottom-0 w-5 text-uppercase">S.no</th>
-                                                <th class="bg-transparent border-bottom-0 text-uppercase">Name</th>
-                                                <th class="bg-transparent border-bottom-0 text-uppercase">Date</th>
-                                                <th class="bg-transparent border-bottom-0 text-uppercase">Amount</th>
-                                                <th class="bg-transparent border-bottom-0 text-uppercase">Status</th>
+                                                <th class="bg-transparent border-bottom-0 w-5 text-uppercase">A.no</th>
+                                                <th class="bg-transparent border-bottom-0 text-uppercase">Employee Name</th>
+                                                <th class="bg-transparent border-bottom-0 text-uppercase">Department</th>
+                                                <th class="bg-transparent border-bottom-0 text-uppercase">Role</th>
+                                                <th class="bg-transparent border-bottom-0 text-uppercase">Gender</th>
+                                                <th class="bg-transparent border-bottom-0 text-uppercase">DOB</th>
+                                                <th class="bg-transparent border-bottom-0 text-uppercase">Email</th>
+                                                <th class="bg-transparent border-bottom-0 text-uppercase">Adress</th>
                                                 <th class="bg-transparent border-bottom-0 text-uppercase">Action</th>
                                             </tr>
                                         </thead>
@@ -102,16 +110,23 @@
                                                             src="../assets/images/faces/1.jpg">
                                                         <div class="ms-2 mt-0 mt-sm-2 d-block">
                                                             <h6 class="mb-0 fs-14 fw-semibold">Jake poole</h6>
-                                                            <span class="fs-12 text-muted">jacke123@gmail.com</span>
+                                                            
                                                         </div>
                                                     </div>
                                                 </td>
+                                                <td class="text-muted fs-15 fw-semibold">IT</td>
+                                                <td class="text-muted fs-15 fw-semibold">Developer</td>
+                                                <td class="text-muted fs-15 fw-semibold">Male</td>
                                                 <td class="text-muted fs-15 fw-semibold">20-11-2020 </td>
-                                                <td class="text-muted fs-15 fw-semibold">$5.321.2</td>
+                                                <td class="text-muted fs-15 fw-semibold"><span class="fs-12 text-muted">jacke123@gmail.com</span></td>
                                                 <td class="text-success fs-15 fw-semibold">Success</td>
                                                 <td class="">
                                                     <div class="btn-list">
                                                         <a class="btn btn-icon btn-primary btn-wave waves-effect waves-light"
+                                                            data-bs-toggle="tooltip" data-bs-original-title="View">
+                                                            <i class="fe fe-eye fs-13"></i>
+                                                        </a>
+                                                        <a class="btn btn-icon btn-warning btn-wave waves-effect waves-light"
                                                             data-bs-toggle="tooltip" data-bs-original-title="Edit">
                                                             <i class="ri-pencil-fill lh-1"></i>
                                                         </a>
@@ -122,202 +137,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="border-bottom">
-                                                <td class="text-muted fs-15 fw-semibold">02.</td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <img class="avatar avatar-md rounded-circle mt-1" alt="img"
-                                                            src="../assets/images/faces/2.jpg">
-                                                        <div class="ms-2 mt-0 mt-sm-2 d-block">
-                                                            <h6 class="mb-0 fs-14 fw-semibold">Virginia Gray</h6>
-                                                            <span class="fs-12 text-muted">virginia456@gmail.com</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-muted fs-15 fw-semibold">20-11-2020 </td>
-                                                <td class="text-muted fs-15 fw-semibold">$53,3654</td>
-                                                <td class="text-success fs-15 fw-semibold">Success</td>
-                                                <td class="">
-                                                    <div class="btn-list">
-                                                        <a class="btn btn-icon btn-primary btn-wave waves-effect waves-light"
-                                                            data-bs-toggle="tooltip" data-bs-original-title="Edit">
-                                                            <i class="ri-pencil-fill lh-1"></i>
-                                                        </a>
-                                                        <a class="btn btn-icon btn-danger btn-wave waves-effect waves-light"
-                                                            data-bs-toggle="tooltip" data-bs-original-title="Delete">
-                                                            <i class="ri-delete-bin-7-line lh-1"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="border-bottom">
-                                                <td class="text-muted fs-15 fw-semibold">03.</td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <img class="avatar avatar-md rounded-circle mt-1" alt="img"
-                                                            src="../assets/images/faces/3.jpg">
-                                                        <div class="ms-2 mt-0 mt-sm-2 d-block">
-                                                            <h6 class="mb-0 fs-14 fw-semibold">Jacob Thomson</h6>
-                                                            <span class="fs-12 text-muted">jacobthomson@gmail.com</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-muted fs-15 fw-semibold">20-11-2020 </td>
-                                                <td class="text-muted fs-15 fw-semibold">$1,56,3654</td>
-                                                <td class="text-primary fs-15 fw-semibold">Pending</td>
-                                                <td class="">
-                                                    <div class="btn-list">
-                                                        <a class="btn btn-icon btn-primary btn-wave waves-effect waves-light"
-                                                            data-bs-toggle="tooltip" data-bs-original-title="Edit">
-                                                            <i class="ri-pencil-fill lh-1"></i>
-                                                        </a>
-                                                        <a class="btn btn-icon btn-danger btn-wave waves-effect waves-light"
-                                                            data-bs-toggle="tooltip" data-bs-original-title="Delete">
-                                                            <i class="ri-delete-bin-7-line lh-1"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="border-bottom">
-                                                <td class="text-muted fs-15 fw-semibold">04.</td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <img class="avatar avatar-md rounded-circle mt-1" alt="img"
-                                                            src="../assets/images/faces/4.jpg">
-                                                        <div class="ms-2 mt-0 mt-sm-2 d-block">
-                                                            <h6 class="mb-0 fs-14 fw-semibold">Trevor Thomson</h6>
-                                                            <span class="fs-12 text-muted">trevor@gmail.com</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-muted fs-15 fw-semibold">19-11-2020 </td>
-                                                <td class="text-muted fs-15 fw-semibold">$12.3</td>
-                                                <td class="text-success fs-15 fw-semibold">Success</td>
-                                                <td class="">
-                                                    <div class="btn-list">
-                                                        <a class="btn btn-icon btn-primary btn-wave waves-effect waves-light"
-                                                            data-bs-toggle="tooltip" data-bs-original-title="Edit">
-                                                            <i class="ri-pencil-fill lh-1"></i>
-                                                        </a>
-                                                        <a class="btn btn-icon btn-danger btn-wave waves-effect waves-light"
-                                                            data-bs-toggle="tooltip" data-bs-original-title="Delete">
-                                                            <i class="ri-delete-bin-7-line lh-1"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="border-bottom">
-                                                <td class="text-muted fs-15 fw-semibold">05.</td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <img class="avatar avatar-md rounded-circle mt-1" alt="img"
-                                                            src="../assets/images/faces/5.jpg">
-                                                        <div class="ms-2 mt-0 mt-sm-2 d-block">
-                                                            <h6 class="mb-0 fs-14 fw-semibold">Kylie north</h6>
-                                                            <span class="fs-12 text-muted">kylie@gmail.com</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-muted fs-15 fw-semibold">19-11-2020 </td>
-                                                <td class="text-muted fs-15 fw-semibold">$5.312.2</td>
-                                                <td class="text-primary fs-15 fw-semibold">Pending</td>
-                                                <td class="">
-                                                    <div class="btn-list">
-                                                        <a class="btn btn-icon btn-primary btn-wave waves-effect waves-light"
-                                                            data-bs-toggle="tooltip" data-bs-original-title="Edit">
-                                                            <i class="ri-pencil-fill lh-1"></i>
-                                                        </a>
-                                                        <a class="btn btn-icon btn-danger btn-wave waves-effect waves-light"
-                                                            data-bs-toggle="tooltip" data-bs-original-title="Delete">
-                                                            <i class="ri-delete-bin-7-line lh-1"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="border-bottom">
-                                                <td class="text-muted fs-15 fw-semibold">06.</td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <img class="avatar avatar-md rounded-circle mt-1" alt="img"
-                                                            src="../assets/images/faces/11.jpg">
-                                                        <div class="ms-2 mt-0 mt-sm-2 d-block">
-                                                            <h6 class="mb-0 fs-14 fw-semibold">Jan Hodges</h6>
-                                                            <span class="fs-12 text-muted">jan@gmail.com</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-muted fs-15 fw-semibold">19-11-2020 </td>
-                                                <td class="text-muted fs-15 fw-semibold">$5.312.2</td>
-                                                <td class="text-danger fs-15 fw-semibold">Cancel</td>
-                                                <td class="">
-                                                    <div class="btn-list">
-                                                        <a class="btn btn-icon btn-primary btn-wave waves-effect waves-light"
-                                                            data-bs-toggle="tooltip" data-bs-original-title="Edit">
-                                                            <i class="ri-pencil-fill lh-1"></i>
-                                                        </a>
-                                                        <a class="btn btn-icon btn-danger btn-wave waves-effect waves-light"
-                                                            data-bs-toggle="tooltip" data-bs-original-title="Delete">
-                                                            <i class="ri-delete-bin-7-line lh-1"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="border-bottom">
-                                                <td class="text-muted fs-15 fw-semibold">07.</td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <img class="avatar avatar-md rounded-circle mt-1" alt="img"
-                                                            src="../assets/images/faces/7.jpg">
-                                                        <div class="ms-2 mt-0 mt-sm-2 d-block">
-                                                            <h6 class="mb-0 fs-14 fw-semibold">Trevor Thomson</h6>
-                                                            <span class="fs-12 text-muted">trevor@gmail.com</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-muted fs-15 fw-semibold">19-11-2020 </td>
-                                                <td class="text-muted fs-15 fw-semibold">$2,24,1421</td>
-                                                <td class="text-success fs-15 fw-semibold">Success</td>
-                                                <td class="">
-                                                    <div class="btn-list">
-                                                        <a class="btn btn-icon btn-primary btn-wave waves-effect waves-light"
-                                                            data-bs-toggle="tooltip" data-bs-original-title="Edit">
-                                                            <i class="ri-pencil-fill lh-1"></i>
-                                                        </a>
-                                                        <a class="btn btn-icon btn-danger btn-wave waves-effect waves-light"
-                                                            data-bs-toggle="tooltip" data-bs-original-title="Delete">
-                                                            <i class="ri-delete-bin-7-line lh-1"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-muted fs-15 fw-semibold">08.</td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <img class="avatar avatar-md rounded-circle mt-1" alt="img"
-                                                            src="../assets/images/faces/8.jpg">
-                                                        <div class="ms-2 mt-0 mt-sm-2 d-block">
-                                                            <h6 class="mb-0 fs-14 fw-semibold">Emily Lewis</h6>
-                                                            <span class="fs-12 text-muted">emily@gmail.com</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-muted fs-15 fw-semibold">19-11-2020 </td>
-                                                <td class="text-muted fs-15 fw-semibold">$9.321.2</td>
-                                                <td class="text-danger fs-15 fw-semibold">Cancel</td>
-                                                <td class="">
-                                                    <div class="btn-list">
-                                                        <a class="btn btn-icon btn-primary btn-wave waves-effect waves-light"
-                                                            data-bs-toggle="tooltip" data-bs-original-title="Edit">
-                                                            <i class="ri-pencil-fill lh-1"></i>
-                                                        </a>
-                                                        <a class="btn btn-icon btn-danger btn-wave waves-effect waves-light"
-                                                            data-bs-toggle="tooltip" data-bs-original-title="Delete">
-                                                            <i class="ri-delete-bin-7-line lh-1"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                          
                                         </tbody>
                                     </table>
                                 </div>
@@ -411,4 +231,39 @@
               </div>
             </div>
         </div>
+                                        <!-- Modal -->
+                                        <div id="myModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+
+                                        <div class="modal-body" id="add_employee">
+
+                                        </div>
+                                    </div>
+
+                                 </div>
+                            </div>
+
+        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <script>
+            function openEmployee(){
+                alert("Add User button clicked!");
+               
+        }
+        function addEmployee(){
+          $('#myModal').modal('show');
+          $('#add_employee').load('add_employee.php');
+        }
+
+        </script>
+
         <?php include("layout/footer.php"); ?>
